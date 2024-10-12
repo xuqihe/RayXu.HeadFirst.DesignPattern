@@ -1,94 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8F191572-A15B-4222-A9BF-0D77BB7CD54A}</ProjectGuid>
+    <TargetFramework>net8.0</TargetFramework>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RayXu.HeadFirst.DesignPattern.AbstractFactory</RootNamespace>
-    <AssemblyName>RayXu.HeadFirst.DesignPattern.AbstractFactory</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>RayXu.HeadFirst.DesignPattern.AbstractFactory</AssemblyTitle>
+    <Product>RayXu.HeadFirst.DesignPattern.AbstractFactory</Product>
+    <Copyright>Copyright ©  2016</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Abstract\Ingredient\IClam.cs" />
-    <Compile Include="Abstract\Ingredient\IDough.cs" />
-    <Compile Include="Abstract\Ingredient\IIngredient.cs" />
-    <Compile Include="Abstract\Ingredient\ICheese.cs" />
-    <Compile Include="Abstract\Ingredient\IPepperoni.cs" />
-    <Compile Include="Abstract\Ingredient\ISauce.cs" />
-    <Compile Include="Abstract\Ingredient\IVeggie.cs" />
-    <Compile Include="Abstract\IPizzaIngredientFactory.cs" />
-    <Compile Include="Abstract\PizzaInfo.cs" />
-    <Compile Include="Abstract\PizzaStoreInfo.cs" />
-    <Compile Include="Concrete\PizzaStore\CHIPizzaStoreInfo.cs" />
-    <Compile Include="Concrete\PizzaStore\NYPizzaStoreInfo.cs" />
-    <Compile Include="Concrete\Pizza\CheesePizzaInfo.cs" />
-    <Compile Include="Concrete\Pizza\ClamPizzaInfo.cs" />
-    <Compile Include="Concrete\IngredientFactory\NYPizzaIngredientFactoryInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Veggie\GarlicInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Veggie\EggPlantInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Clam\FreshClamInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Clam\FrozenClamInfo.cs" />
-    <Compile Include="Concrete\IngredientFactory\CHIPizzaIngredientFactoryInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Veggie\BlackOliveInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Sauce\MarinaraSauceInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Cheese\MozzerellaInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Veggie\MushroomInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Veggie\OnionInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Sauce\PlumTomatoSauceInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Veggie\RedPepperInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Cheese\ReggianoCheeseInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Pepperoni\SlicedPepperoniInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Veggie\SpinachInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Dough\ThickCrustDoughInfo.cs" />
-    <Compile Include="Concrete\Ingredient\Dough\ThinCrustDoughInfo.cs" />
-    <Compile Include="Concrete\Pizza\PepperoniPizzaInfo.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>
